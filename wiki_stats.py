@@ -72,7 +72,7 @@ class WikiGraph:
                 return i
 
     def get_number_of_pages(self):
-        return self._n
+        return len(self._titles)
 
     def is_redirect(self, _id):
         if int(self._redirect[_id]) == 0:
